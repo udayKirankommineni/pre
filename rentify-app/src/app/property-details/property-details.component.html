@@ -1,0 +1,16 @@
+<h2>Property Details</h2>
+<div *ngIf="property">
+  <h3>{{ property.title }}</h3>
+  <p>{{ property.description }}</p>
+  <p>Place Area: {{ property.placeArea }}</p>
+  <p>Bedrooms: {{ property.bedrooms }}</p>
+  <p>Bathrooms: {{ property.bathrooms }}</p>
+  <p>Hospitals Nearby: {{ property.hospitalsNearby }}</p>
+  <p>Colleges Nearby: {{ property.collegesNearby }}</p>
+</div>
+<div *ngIf="seller">
+  <h3>Seller Details</h3>
+  <p>Name: {{ seller.firstName }} {{ seller.lastName }}</p>
+  <p>Email: {{ seller.email }}</p>
+  <p>Phone: {{ seller.phoneNumber }}</p>
+</div>

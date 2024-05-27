@@ -1,0 +1,7 @@
+<h2>Buyer Dashboard</h2>
+<ul>
+  <li *ngFor="let property of properties">
+    {{ property.title }} - 
+    <a [routerLink]="['/property-details', property.id]">I'm Interested</a>
+  </li>
+</ul>

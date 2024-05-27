@@ -1,0 +1,9 @@
+<h2>Seller Dashboard</h2>
+<a routerLink="/post-property">Post a new property</a>
+<ul>
+  <li *ngFor="let property of properties">
+    {{ property.title }} - 
+    <a [routerLink]="['/update-property', property.id]">Edit</a> - 
+    <button (click)="deleteProperty(property.id)">Delete</button>
+  </li>
+</ul>

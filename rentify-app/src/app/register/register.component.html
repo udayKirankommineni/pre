@@ -1,0 +1,19 @@
+<h2>Register</h2>
+<form (ngSubmit)="register()">
+  <label>First Name:</label>
+  <input [(ngModel)]="user.firstName" name="firstName" required>
+  <br>
+  <label>Last Name:</label>
+  <input [(ngModel)]="user.lastName" name="lastName" required>
+  <br>
+  <label>Email:</label>
+  <input [(ngModel)]="user.email" name="email" type="email" required>
+  <br>
+  <label>Phone Number:</label>
+  <input [(ngModel)]="user.phoneNumber" name="phoneNumber" required>
+  <br>
+  <label>Are you a seller?</label>
+  <input [(ngModel)]="user.isSeller" name="isSeller" type="checkbox">
+  <br>
+  <button type="submit">Register</button>
+</form>
